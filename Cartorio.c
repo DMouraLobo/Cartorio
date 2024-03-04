@@ -142,6 +142,7 @@ int main()
 	   printf("\t1 - Registrar nomes\n");
 	   printf("\t2 - Consultar nomes\n");
 	   printf("\t3 - Deletar nomes\n");
+	   printf("\t4 - Sair do sistema\n");
 	
 	   scanf("%d",&opcao); // Registrando o valor na variavel
 	
@@ -159,6 +160,12 @@ int main()
 			
 			case 3:
 			deletar(); //Chamada de opção para deletar
+    		break;
+    		
+    		case 4:
+    		printf("Obrigado por utilizar o sistema!\n");
+    		system("pause");
+    		return 0;
     		break;
 			
 			default: //Opção para entrada de valores não correspondentes com as opções do menu
